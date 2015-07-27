@@ -1,0 +1,167 @@
+/*
+ * Calculadora.java
+ * This file is part of ISIS1206
+ *
+ * Copyright (C) 2015 - ISIS1206 Team 
+ */
+package calculadora;
+
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.util.Scanner;
+
+public class InterfazCalculadora
+{
+  
+   private Calculadora calculadora;
+
+
+   /**
+      Enumeración que describe las operaciones disponibles de la calculadora
+   **/
+   private static enum Oper
+   {
+       SUMA, RESTA, PRODUCTO, DIVISION
+   }
+
+   /**
+      Limpia la consola, de acuerdo al sistema operativo.
+   **/
+   public final static void clearConsole()
+   {
+         String ins = null;
+
+         if(OS.contains("Windows"))
+         {
+              ins = "cls";
+         }
+         else
+         {
+              ins = "clear";
+         }
+
+         try
+         {
+              Runtime r = Runtime.getRuntime();
+              Process pr = r.exec(new String[]{ins});
+              pr.waitFor();
+              String line = "";
+ 
+              try(BufferedReader reader = 
+              new BufferedReader(new InputStreamReader(pr.getInputStream())))
+              {
+                     while ((line = reader.readLine())!= null) 
+                     {
+                            System.out.println(line);
+                     }
+              }
+              
+         }
+         catch(Exception e)
+         {
+
+         }
+   }
+
+   /**
+     Realiza una operación binaria entre dos números.
+     @param tipo Tipo de operación a realizar, las operaciones deben ser seleccionadas de acuerdo al enum Oper. tipo != null.
+     @param a Primer número sobre el cual se desea realizar la operación.
+     @param b Segundo número sobre el cual se desea realizar la operación.
+     
+   **/
+   public static void realizarOperacion(Oper tipo, double a, double b)
+   {
+
+       if(tipo == Oper.SUMA)
+       {
+           result = a+b;
+       }
+       else if(tipo == Oper.RESTA)
+       {
+           result = a-b;
+       }
+       else if(tipo == Oper.PRODUCTO)
+       {
+           result = a*b;
+       }
+       else
+       {
+           result = a/b;
+       }
+
+   }
+
+   /**
+     Punto de entrada de la aplicación.
+   **/
+   public static void main(String... args)
+   {
+        OS = System.getProperty("os.name");          //Se solicita el Sistema Operativo actual.
+        double a = 0;
+        double b = 0;
+        boolean finish = false;                      //Variable de finalización.
+        Scanner in = new Scanner(System.in);         //Se inicializa un lector sobre la entrada estándar
+        Oper type = null;                            //Se define una variable que establece la operación seleccionada por el usuario.
+        boolean validOpt = true;
+
+        while(!finish)                                                                     //Ciclo infinito
+        {
+           validOpt = true;
+           clearConsole();                                                                 //Se limpia la consola
+           System.out.println("-----------------------------------------------");          //Impresión del menú en consola
+           System.out.println("-                                             -");
+           System.out.println("-         Calculadora de uso sencillo         -");
+           System.out.println("-                                             -");
+           System.out.println("-----------------------------------------------");
+           System.out.println("\nEl resultado actual es: "+result);
+           System.out.println("\nMenú principal: ");
+           System.out.println("1. Sumar");
+           System.out.println("2. Restar");
+           System.out.println("3. Multiplicar");
+           System.out.println("4. Dividir");
+           System.out.println("5. Salir del programa");
+           System.out.print("Ingrese el número al cual corresponde la opción que desea escoger: ");
+           int opt = in.nextInt();                                                         //Se espera a que el usuario ingrese un número entero.
+           switch(opt)                                                                     //Interpretación de la entrada
+           {
+              case 1:
+                type = Oper.SUMA;                                                          //Por cada caso posible de entrada, se define una operación
+                break;
+              case 2:
+                type = Oper.RESTA;
+                break;
+              case 3:
+                type = Oper.PRODUCTO;
+                break;
+              case 4:
+                type = Oper.DIVISION;
+                break;
+              case 5:
+                finish = true;                                                               //Se desea finalizar la ejecución del programa
+                break;
+              default:                                                                       //Opción inválida
+                validOpt = false;
+                break;
+           }
+           if(!finish && validOpt)
+           {
+                String input = in.nextLine();                                                //Se elimina toda información residual que permanezca en la entrada.
+                System.out.print("Ingrese dos números, separados con una coma (Si se desea operar con el resultado actual, insertar un número): ");
+                input = in.nextLine();                                                       //Se lee la siguiente entrada por parte del usuario
+                String[] numArgs = input.split(",");                                         //Interpretación de la entrada.
+                if(numArgs.length == 1)
+                {
+                    a = result;
+                    b = Double.parseDouble(numArgs[0]);
+                }
+                else if (numArgs.length == 2)
+                {
+                    a = Double.parseDouble(numArgs[0]);
+                    b = Double.parseDouble(numArgs[1]);
+                }
+                realizarOperacion(type, a, b);                                               //Se realiza la operación.
+           }
+        }
+   }
+}

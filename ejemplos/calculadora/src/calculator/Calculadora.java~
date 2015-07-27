@@ -1,0 +1,41 @@
+/*
+ * Calculadora.java
+ * This file is part of ISIS1206
+ *
+ * Copyright (C) 2015 - ISIS1206 Team 
+ */
+package calculadora;
+
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.util.Scanner;
+
+public class Calculadora
+{
+
+   private double result = 0;         //Resultado actual de la calculadora
+   
+   public int sumar(int a, int b){
+      result = a+b;
+      return result;
+   }
+
+   public int restar(int a, int b){
+      result = a-b; 
+      return result;
+   }
+
+   public int multiplicar(int a, int b){
+      result = a*b;
+      return result;
+   }
+
+   public int dividir(int a, int b){
+      result = a/b;
+      return result;
+   }
+   
+   public int darResultadoActual(){
+     return result;
+   }
+}

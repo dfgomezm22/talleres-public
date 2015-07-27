@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="true" build="bin/" manifest="" root="src/" work="data">
+    <createjar file="calculator.jar" flags="12"/>
+    <source>
+      <file active="true" name="calculator/CalculatorUI.java" package="calculator" timestamp="26-Jul-2015 16:28:02">
+        <select from="369" to="369"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="calculator/Calculator.java" package="calculator" timestamp="26-Jul-2015 16:02:19">
+        <select from="369" to="369"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
