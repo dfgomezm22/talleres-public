@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <drjava version="drjava-20140826-r5761">
-  <project autorefresh="true" build="bin/" main="taller.Main" manifest="" root="src/" work="data/">
+  <project autorefresh="true" build="bin/" main="taller.Main" manifest="" root="src/" work="">
     <createjar file="taller.jar" flags="12"/>
     <source>
       <file active="true" name="taller/Zoologico.java" package="taller" timestamp="27-Jul-2015 03:06:10">
