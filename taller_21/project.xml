@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="true" build="bin/" main="taller.Main" manifest="" root="src/" work="data/">
+    <createjar file="taller.jar" flags="12"/>
+    <source>
+      <file active="true" name="taller/Main.java" package="taller" timestamp="27-Jul-2015 01:41:17">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/interfaz/PanelProductos.java" package="uniandes.cupi2.tienda.interfaz" timestamp="27-Jul-2015 01:35:32">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/interfaz/PanelCalculos.java" package="uniandes.cupi2.tienda.interfaz" timestamp="27-Jul-2015 01:35:32">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/interfaz/PanelOperaciones.java" package="uniandes.cupi2.tienda.interfaz" timestamp="27-Jul-2015 01:35:32">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/mundo/Tienda.java" package="uniandes.cupi2.tienda.mundo" timestamp="27-Jul-2015 01:37:03">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/mundo/Producto.java" package="uniandes.cupi2.tienda.mundo" timestamp="27-Jul-2015 01:39:20">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/interfaz/InterfazTienda.java" package="uniandes.cupi2.tienda.interfaz" timestamp="27-Jul-2015 01:39:20">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/test/TiendaTest.java" package="uniandes.cupi2.tienda.test" timestamp="27-Jul-2015 01:39:28">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="uniandes/cupi2/tienda/test/ProductoTest.java" package="uniandes.cupi2.tienda.test" timestamp="27-Jul-2015 01:39:40">
+        <select from="275" to="275"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath>
+      <file absolute="false" name="../lib/hamcrest-core-1.3.jar"/>
+      <file absolute="false" name="../lib/junit-4.12.jar"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
