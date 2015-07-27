@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="true" build="bin/" main="taller.Main" manifest="" root="src/" work="">
+    <createjar file="taller.jar" flags="12"/>
+    <source>
+      <file active="true" name="algorithm/race/AlgorithmTournament.java" package="algorithm.race" timestamp="27-Jul-2015 04:35:50">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/Stopwatch.java" package="algorithm.race" timestamp="23-Jul-2015 18:46:47">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="taller/test/MainTest.java" package="taller.test" timestamp="26-Jul-2015 23:41:24">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/TimSortTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:32:07">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/ShellSortTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:32:08">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/SelectionSortTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:32:08">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/QuickSortTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:32:10">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/InsertionSortTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:32:11">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/BubbleSortTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:32:11">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/AlgorithmTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:32:12">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/Screen.java" package="algorithm.race" timestamp="27-Jul-2015 04:32:13">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="taller/Main.java" package="taller" timestamp="27-Jul-2015 04:25:33">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/AlgorithmCLI.java" package="algorithm.race" timestamp="27-Jul-2015 04:32:15">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+      <file name="algorithm/race/teams/MergeSortTeam.java" package="algorithm.race.teams" timestamp="27-Jul-2015 04:36:53">
+        <select from="2947" to="2947"/>
+        <scroll column="1273" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed>
+      <path name="./[ Source Files ]/taller/test/"/>
+    </collapsed>
+    <classpath>
+      <file absolute="false" name="../lib/hamcrest-core-1.3.jar"/>
+      <file absolute="false" name="../lib/junit-4.12.jar"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
