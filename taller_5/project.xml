@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20140826-r5761">
+  <project autorefresh="true" build="bin/" main="taller.Main" manifest="" root="src/" work="">
+    <createjar file="taller.jar" flags="12"/>
+    <source>
+      <file active="true" name="taller/test/MainTest.java" package="taller.test" timestamp="26-Jul-2015 23:41:24">
+        <select from="99" to="99"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="taller/Main.java" package="taller" timestamp="26-Jul-2015 19:37:27">
+        <select from="99" to="99"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath>
+      <file absolute="false" name="../lib/hamcrest-core-1.3.jar"/>
+      <file absolute="false" name="../lib/junit-4.12.jar"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
